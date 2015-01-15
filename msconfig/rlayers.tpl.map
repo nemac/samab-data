@@ -89,7 +89,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/tree_cover.img
+        DATA     %(RASTER_DATA_DIR)s/tree_cover.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 	INCLUDE "cmaps/tree_cover.cmap"
@@ -118,7 +118,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/landcover_06.img
+        DATA     %(RASTER_DATA_DIR)s/landcover_06.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 	INCLUDE "cmaps/landcover_06.cmap"
@@ -147,7 +147,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/impsurf_06.img
+        DATA     %(RASTER_DATA_DIR)s/impsurf_06.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/impsurf_06.cmap"
@@ -176,7 +176,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_76.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_76.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -205,7 +205,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_85.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_85.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -234,7 +234,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_96.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_96.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -263,7 +263,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_06.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_06.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -292,7 +292,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_10.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -321,7 +321,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_15.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_15.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -350,7 +350,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_20.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_20.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -379,7 +379,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_25.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_25.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -408,7 +408,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/uncc_30.img
+        DATA     %(RASTER_DATA_DIR)s/uncc_30.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/uncc_landuse.cmap"
@@ -437,7 +437,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/hous_den_00.img
+        DATA     %(RASTER_DATA_DIR)s/hous_den_00.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/hous_den.cmap"
@@ -466,7 +466,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/hous_den_30.img
+        DATA     %(RASTER_DATA_DIR)s/hous_den_30.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/hous_den.cmap"
@@ -495,7 +495,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/sfsuit.img
+        DATA     %(RASTER_DATA_DIR)s/sfsuit.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/sfsuit.cmap"
@@ -524,7 +524,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/mfsuit.img
+        DATA     %(RASTER_DATA_DIR)s/mfsuit.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/mfsuit.cmap"
@@ -553,7 +553,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/indsuit.img
+        DATA     %(RASTER_DATA_DIR)s/indsuit.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/indsuit.cmap"
@@ -582,7 +582,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/comsuit.img
+        DATA     %(RASTER_DATA_DIR)s/comsuit.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/comsuit.cmap"
@@ -611,7 +611,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/dem.img
+        DATA     %(RASTER_DATA_DIR)s/dem.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/dem.cmap"
@@ -640,7 +640,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/hillshade.img
+        DATA     %(RASTER_DATA_DIR)s/hillshade.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/hillshade.cmap"
@@ -669,7 +669,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/slope_20.img
+        DATA     %(RASTER_DATA_DIR)s/slope_20.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/slope_20.cmap"
@@ -691,7 +691,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/p_ann_81_10.img
+        DATA     %(RASTER_DATA_DIR)s/p_ann_81_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/p_ann_81_10.cmap"
@@ -713,7 +713,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/ppt_dry_81_10.img
+        DATA     %(RASTER_DATA_DIR)s/ppt_dry_81_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/ppt_dry_81_10.cmap"
@@ -735,7 +735,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/ppt_wet_81_10.img
+        DATA     %(RASTER_DATA_DIR)s/ppt_wet_81_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/ppt_wet_81_10.cmap"
@@ -757,7 +757,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/tmax_an_81_10.img
+        DATA     %(RASTER_DATA_DIR)s/tmax_an_81_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/tmax_an_81_10.cmap"
@@ -779,7 +779,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/tmin_an_81_10.img
+        DATA     %(RASTER_DATA_DIR)s/tmin_an_81_10.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/tmin_an_81_10.cmap"
@@ -808,7 +808,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/bauempby15_2000.img
+        DATA     %(RASTER_DATA_DIR)s/bauempby15_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/bauempby15_2000.cmap"
@@ -837,7 +837,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/bauduby5_2000.img
+        DATA     %(RASTER_DATA_DIR)s/bauduby5_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/bauduby5_2000.cmap"
@@ -866,7 +866,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/egempby15_2000.img
+        DATA     %(RASTER_DATA_DIR)s/egempby15_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/egempby15_2000.cmap"
@@ -895,7 +895,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/egduby5_2000.img
+        DATA     %(RASTER_DATA_DIR)s/egduby5_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/egduby5_2000.cmap"
@@ -924,7 +924,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/psempby15_2000.img
+        DATA     %(RASTER_DATA_DIR)s/psempby15_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/psempby15_2000.cmap"
@@ -953,7 +953,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/psduby5_2000.img
+        DATA     %(RASTER_DATA_DIR)s/psduby5_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/psduby5_2000.cmap"
@@ -982,7 +982,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/rcempby15_2000.img
+        DATA     %(RASTER_DATA_DIR)s/rcempby15_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/rcempby15_2000.cmap"
@@ -1011,7 +1011,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/rcduby5_2000.img
+        DATA     %(RASTER_DATA_DIR)s/rcduby5_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/rcduby5_2000.cmap"
@@ -1040,7 +1040,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/epempby15_2000.img
+        DATA     %(RASTER_DATA_DIR)s/epempby15_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/epempby15.html
 		INCLUDE "cmaps/epempby15_2000.cmap"
@@ -1069,7 +1069,7 @@ MAP
         TYPE     RASTER
         DUMP     TRUE
         STATUS   OFF
-        DATA     /flood/grownc/epduby5_2000.img
+        DATA     %(RASTER_DATA_DIR)s/epduby5_2000.img
         HEADER   ./templates/layer_query_header.html
         TEMPLATE ./templates/layer_query_body.html
 		INCLUDE "cmaps/epduby5_2000.cmap"
