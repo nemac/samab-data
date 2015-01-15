@@ -1,4 +1,4 @@
-GroWNC MapViewer
-=========
+los-food-asset-map-data
+=======================
 
-Custom html, css & config files for the GroWNC mapviewer found at http://mapviewer.gro-wnc.org/
+Data services for the LOS Food Asset Map Viewer.
