@@ -1,0 +1,6 @@
+*~
+*.pyc
+var/Config.py
+var/log
+msconfig/vlayers.map
+msconfig/rlayers.map
