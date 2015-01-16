@@ -2266,5 +2266,285 @@ MAP
             "gml_include_items"    "zip,po_name"
         END  # end METADATA
     END # end Layer
+	LAYER # 
+        NAME food_infrastructure
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from food_infrastructure"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "food_infrastructure"
+            STYLE
+                SYMBOL 'circle'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "food_infrastructure"
+            "wms_abstract"         "food_infrastructure"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer
+	LAYER # 
+        NAME ag_farms
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from ag_farms"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+		
+		
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+       CLASS
+            NAME "ag_farms"
+            STYLE
+                #SYMBOL 'circle'
+                #SIZE 5
+                COLOR 255 0 0
+				OUTLINECOLOR 0 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "ag_farms"
+            "wms_abstract"         "ag_farms"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+	LAYER # 
+        NAME farmers_age_below_35
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from farmers_age_below_35"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "farmers_age_below_35"
+            STYLE
+                COLOR        232 232 232
+                OUTLINECOLOR 0 0 0 
+            END
+        END
+        METADATA
+            "wms_title"            "farmers_age_below_35"
+            "wms_abstract"         "farmers_age_below_35"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+	LAYER # 
+        NAME farmland_change
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from farmland_change"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "farmland_change"
+            STYLE
+                COLOR        232 232 232
+                OUTLINECOLOR 0 0 0 
+            END
+        END
+        METADATA
+            "wms_title"            "farmland_change"
+            "wms_abstract"         "farmland_change"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+		LAYER # 
+        NAME direct_sales
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from direct_sales"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "direct_sales"
+            STYLE
+                COLOR        232 232 232
+                OUTLINECOLOR 0 0 0 
+            END
+        END
+        METADATA
+            "wms_title"            "direct_sales"
+            "wms_abstract"         "direct_sales"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
 	
+		LAYER # 
+        NAME diabetes_rate
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from diabetes_rate"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "diabetes_rate"
+            STYLE
+                COLOR        232 232 232
+                OUTLINECOLOR 0 0 0 
+            END
+        END
+        METADATA
+            "wms_title"            "diabetes_rate"
+            "wms_abstract"         "diabetes_rate"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+	
+		LAYER # 
+        NAME obesity_rate
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from obesity_rate"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "obesity_rate"
+            STYLE
+                COLOR        232 232 232
+                OUTLINECOLOR 0 0 0 
+            END
+        END
+        METADATA
+            "wms_title"            "obesity_rate"
+            "wms_abstract"         "obesity_rate"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+	
+		LAYER # 
+        NAME snap_retail
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from snap_retail"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "snap_retail"
+            STYLE
+                SYMBOL 'square'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "snap_retail"
+            "wms_abstract"         "snap_retail"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer
+	LAYER 
+        NAME direct_markets
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from direct_markets"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "direct_markets"
+            STYLE
+                SYMBOL 'circle'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "direct_markets"
+            "wms_abstract"         "direct_markets"
+            "gml_include_items"    "all"
+        END  # end METADATA
+    END # end Layer    
+	LAYER 
+        NAME food_service_pop
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from food_service_pop"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "food_service_pop"
+            STYLE
+                SYMBOL 'circle'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "food_service_pop"
+            "wms_abstract"         "food_service_pop"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	
 END
