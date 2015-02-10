@@ -2071,7 +2071,7 @@ MAP
         TEMPLATE         ./templates/layer_query_body.html
 		LABELITEM    	 "co_name"
         CLASS
-            NAME "county_boundaries"
+            NAME "County Boundaries"
             STYLE
                 #COLOR        232 232 232
                 OUTLINECOLOR 0 0 0 
@@ -2316,7 +2316,7 @@ MAP
                 #SYMBOL 'circle'
                 #SIZE 5
                 COLOR 255 0 0
-				OUTLINECOLOR 0 0 0 
+                OUTLINECOLOR 0 0 0 
             END
         END	
         METADATA
@@ -2342,7 +2342,7 @@ MAP
         CLASS
             NAME "farmers_age_below_35"
             STYLE
-                COLOR        232 232 232
+                COLOR 255 0 0
                 OUTLINECOLOR 0 0 0 
             END
         END
@@ -2367,12 +2367,35 @@ MAP
         HEADER           ./templates/layer_query_header.html
         TEMPLATE         ./templates/layer_query_body.html
         CLASS
-            NAME "farmland_change"
-            STYLE
-                COLOR        232 232 232
-                OUTLINECOLOR 0 0 0 
-            END
-        END
+          EXPRESSION ([perchange] < -10)
+          STYLE
+            COLOR 166 97 26
+          END #STYLE
+        END #end class
+        CLASS
+          EXPRESSION ([perchange] >= -10 AND [perchange] < -4.7)
+          STYLE
+            COLOR 223 194 125
+          END #STYLE
+        END #end class        
+        CLASS
+          EXPRESSION ([perchange] >= -4.7 AND [perchange] < 0.7)
+          STYLE
+            COLOR 245 245 245
+          END #STYLE
+        END #end class    
+        CLASS
+          EXPRESSION ([perchange] >= 0.7 AND [perchange] < 6.2)
+          STYLE
+            COLOR 128 205 193
+          END #STYLE
+        END #end class    
+        CLASS
+          EXPRESSION ([perchange] >= 6.2)
+          STYLE
+            COLOR 1 133 113
+          END #STYLE
+        END #end class                
         METADATA
             "wms_title"            "farmland_change"
             "wms_abstract"         "farmland_change"
@@ -2544,6 +2567,140 @@ MAP
         METADATA
             "wms_title"            "food_service_pop"
             "wms_abstract"         "food_service_pop"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	
+	LAYER 
+        NAME full_service_restaurants
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from full_service_restaurants"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "full_service_restaurants"
+            STYLE
+                SYMBOL 'circle'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "full_service_restaurants"
+            "wms_abstract"         "full_service_restaurants"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	    
+	LAYER 
+        NAME grocery_stores
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from grocery_stores"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POINT
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "grocery_stores"
+            STYLE
+                SYMBOL 'circle'
+                SIZE 5
+                COLOR 255 0 0 
+            END
+        END	
+        METADATA
+            "wms_title"            "grocery_stores"
+            "wms_abstract"         "grocery_stores"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	        
+    LAYER 
+        NAME ag_supportive_lands
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from ag_supportive_lands"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "ag_supportive_lands"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "ag_supportive_lands"
+            "wms_abstract"         "ag_supportive_lands"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	            
+    LAYER 
+        NAME pop_sqmi_wnc
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from pop_sqmi_wnc"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "pop_sqmi_wnc"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "pop_sqmi_wnc"
+            "wms_abstract"         "pop_sqmi_wnc"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	            
+    LAYER 
+        NAME pop_sqmi_5cnty
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from pop_sqmi_5cnty"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "pop_sqmi_5cnty"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "pop_sqmi_5cnty"
+            "wms_abstract"         "pop_sqmi_5cnty"
             "gml_include_items"    "ALL"
         END  # end METADATA
     END # end Layer	

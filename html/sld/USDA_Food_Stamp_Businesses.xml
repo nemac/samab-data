@@ -10,7 +10,7 @@
 					<PointSymbolizer>
 						<Graphic>
 							<ExternalGraphic>
-								<OnlineResource xlink:type="simple" xlink:href="../msconfig/cmapicons/USDA_Food_Stamp_Businesses.png" ></OnlineResource>
+								<OnlineResource xlink:type="simple" xlink:href="../html/cmapicons/USDA_Food_Stamp_Businesses.png" ></OnlineResource>
 								<Format>image/png</Format>
 							</ExternalGraphic>
 						</Graphic>

@@ -10,7 +10,7 @@
 					<PointSymbolizer>
 						<Graphic>
 							<ExternalGraphic>
-								<OnlineResource xlink:type="simple" xlink:href="../msconfig/cmapicons/Mountain_Peaks.png" ></OnlineResource>
+								<OnlineResource xlink:type="simple" xlink:href="../html/cmapicons/Mountain_Peaks.png" ></OnlineResource>
 								<Format>image/png</Format>
 							</ExternalGraphic>
 						</Graphic>

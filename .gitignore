@@ -1,6 +1,5 @@
 *~
 *.pyc
-var/Config.py
-var/log
+var
 msconfig/vlayers.map
 msconfig/rlayers.map
