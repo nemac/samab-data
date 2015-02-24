@@ -2704,4 +2704,108 @@ MAP
             "gml_include_items"    "ALL"
         END  # end METADATA
     END # end Layer	
+    LAYER 
+        NAME food_deserts
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from food_deserts"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "food_deserts"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "food_deserts"
+            "wms_abstract"         "food_deserts"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	
+    LAYER 
+        NAME percent_below_pov
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from percent_below_pov"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "percent_below_pov"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "percent_below_pov"
+            "wms_abstract"         "percent_below_pov"
+            "gml_include_items"    "ALL"
+        END  # end METADATA
+    END # end Layer	
+    LAYER 
+        NAME store_types
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from store_types"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "store_types"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "store_types"
+            "wms_abstract"         "store_types"
+            "gml_include_items"    "type"
+        END  # end METADATA
+    END # end Layer	
+    LAYER 
+        NAME pop_in_food
+        PROJECTION
+            "init=epsg:4326"
+        END
+        CONNECTIONTYPE   postgis
+        CONNECTION       "%(POSTGIS_CONNECTION_STRING)s"
+        DATA             "geom from pop_in_food"
+        EXTENT           -124.733174 24.543940 -66.950005 49.384359 # US
+        STATUS           OFF
+        TYPE             POLYGON
+        DUMP             TRUE
+        HEADER           ./templates/layer_query_header.html
+        TEMPLATE         ./templates/layer_query_body.html
+        CLASS
+            NAME "pop_in_food"
+            STYLE
+                COLOR 161 217 155
+            END
+        END	
+        METADATA
+            "wms_title"            "pop_in_food"
+            "wms_abstract"         "pop_in_food"
+            "gml_include_items"    "per_pop_fi"
+        END  # end METADATA
+    END # end Layer		
 END

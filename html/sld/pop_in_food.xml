@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
   <NamedLayer>
-    <se:Name>obesity_rate</se:Name>
+    <se:Name>pop_in_food</se:Name>
     <UserStyle>
-      <se:Name>obesity_rate</se:Name>
+      <se:Name>pop_in_food</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
-          <se:Name>20 - 22</se:Name>
+          <se:Name>7.81</se:Name>
           <se:Description>
-            <se:Title>20 - 22</se:Title>
+            <se:Title>7.81</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>20</ogc:Literal>
-              </ogc:PropertyIsGreaterThanOrEqualTo>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>22</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>per_pop_fi</ogc:PropertyName>
+              <ogc:Literal>7.81</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#fff5eb</se:SvgParameter>
+              <se:SvgParameter name="fill">#ebf7fa</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
@@ -34,25 +28,19 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>22 - 24</se:Name>
+          <se:Name>8.89</se:Name>
           <se:Description>
-            <se:Title>22 - 24</se:Title>
+            <se:Title>8.89</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>22</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>24</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>per_pop_fi</ogc:PropertyName>
+              <ogc:Literal>8.89</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#fdd1a5</se:SvgParameter>
+              <se:SvgParameter name="fill">#b3e3e3</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
@@ -62,25 +50,19 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>24 - 26</se:Name>
+          <se:Name>10.78</se:Name>
           <se:Description>
-            <se:Title>24 - 26</se:Title>
+            <se:Title>10.78</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>24</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>26</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>per_pop_fi</ogc:PropertyName>
+              <ogc:Literal>10.78</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#fd9243</se:SvgParameter>
+              <se:SvgParameter name="fill">#67c2a3</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
@@ -90,25 +72,19 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>26 - 28</se:Name>
+          <se:Name>12.46</se:Name>
           <se:Description>
-            <se:Title>26 - 28</se:Title>
+            <se:Title>12.46</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>26</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>28</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>per_pop_fi</ogc:PropertyName>
+              <ogc:Literal>12.46</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#de4f05</se:SvgParameter>
+              <se:SvgParameter name="fill">#2ca360</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
@@ -118,25 +94,19 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>28- 30</se:Name>
+          <se:Name>14.31</se:Name>
           <se:Description>
-            <se:Title>28- 30</se:Title>
+            <se:Title>14.31</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
-            <ogc:And>
-              <ogc:PropertyIsGreaterThan>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>28</ogc:Literal>
-              </ogc:PropertyIsGreaterThan>
-              <ogc:PropertyIsLessThanOrEqualTo>
-                <ogc:PropertyName>obesity_rate</ogc:PropertyName>
-                <ogc:Literal>30</ogc:Literal>
-              </ogc:PropertyIsLessThanOrEqualTo>
-            </ogc:And>
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>per_pop_fi</ogc:PropertyName>
+              <ogc:Literal>14.31</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#7f2704</se:SvgParameter>
+              <se:SvgParameter name="fill">#006e2c</se:SvgParameter>
             </se:Fill>
             <se:Stroke>
               <se:SvgParameter name="stroke">#000000</se:SvgParameter>
