@@ -4,6 +4,7 @@ var
 msconfig/vlayers.map
 msconfig/rlayers.map
 html/legends/*
+html/cmapicons/*
 msconfig/~los-food-asset-map_config.tpl.xml
 msconfig/~makemap.py
 msconfig/~makeviewerconfig.py
