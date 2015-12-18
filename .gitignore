@@ -3,3 +3,9 @@
 var
 msconfig/vlayers.map
 msconfig/rlayers.map
+html/legends/*
+msconfig/~los-food-asset-map_config.tpl.xml
+msconfig/~makemap.py
+msconfig/~makeviewerconfig.py
+msconfig/~rlayers.tpl.map
+msconfig/~vlayers.tpl.map
