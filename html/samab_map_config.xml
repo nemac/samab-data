@@ -144,7 +144,7 @@
 		</wmsGroup>
 		<wmsGroup gid="G05" label="Economic" name="economic">
 			<wmsSubgroup label="Income" >
-				<wmsLayer identify="true" layers="PER_INDPOV_13" legend="http://samab-data.nemac.org/legends/eco1.PNG" lid="EAA" name="Percent of Population Below Poverty, 2013" srs="EPSG:4326" styles="default" url="http://gis.nemac.org/samab-economic?TRANSPARENT=true" visible="false" />
+				<wmsLayer identify="true" layers="PER_INDPOV_13" legend="http://samab-data.nemac.org/legends/eco1.PNG" lid="EAA" name="Percent of Population Below Poverty, 2013" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-economic?TRANSPARENT=true" visible="false" />
 				<wmsLayer identify="true" layers="PER_IND18_13" legend="http://samab-data.nemac.org/legends/eco2.PNG" lid="EAB" name="Percent of Children (Under 18) Below Poverty, 2013" srs="EPSG:4326" styles="default" url="http://gis.nemac.org/samab-economic?TRANSPARENT=true" visible="false" />
 				<wmsLayer identify="true" layers="PERPOV65_13" legend="http://samab-data.nemac.org/legends/eco3.PNG" lid="EAC" name="Percent of Population Aged 65+ Below Poverty, 2013" srs="EPSG:4326" styles="default" url="http://gis.nemac.org/samab-economic?TRANSPARENT=true" visible="false" />
 				<wmsLayer identify="true" layers="PER_SNAP13" legend="http://samab-data.nemac.org/legends/eco4.PNG" lid="EAD" name="Percent of Households Receiving SNAP, 2013" srs="EPSG:4326" styles="default" url="http://gis.nemac.org/samab-economic?TRANSPARENT=true" visible="false" />
