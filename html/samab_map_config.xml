@@ -139,7 +139,7 @@
                 <wmsLayer identify="true" layers="Petroleum_Pipeline" legend="http://samab-data.nemac.org/legends/blt22.PNG" lid="BAV" name="Petroleum Pipelines" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-built?TRANSPARENT=true" visible="false" />
                 <wmsLayer identify="true" layers="Petroleum_Terminals" legend="http://samab-data.nemac.org/legends/blt23.PNG" lid="BAW" name="Petroleum Terminals" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-built?TRANSPARENT=true" visible="false" />
                 <wmsLayer identify="true" layers="Natural_Gas_Pipelines" legend="http://samab-data.nemac.org/legends/blt24.PNG" lid="BAX" name="Natural Gas Pipelines" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-built?TRANSPARENT=true" visible="false" />
-                <wmsLayer identify="true" layers="US_PowerPlants" legend="http://gis.nemac.org/samab-built?SERVICE=WMS&REQUEST=GetLegendGraphic&layer=US_PowerPlants&VERSION=1.1.1&FORMAT=image/png" lid="BAY" name="Power Plant Locations" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-built?TRANSPARENT=true" visible="false" />
+                <wmsLayer identify="true" layers="US_PowerPlants" legend="http://gis.nemac.org/samab-built?SERVICE=WMS&amp;REQUEST=GetLegendGraphic&amp;layer=US_PowerPlants&amp;VERSION=1.1.1&amp;FORMAT=image/png" lid="BAY" name="Power Plant Locations" srs="EPSG:3785" styles="default" url="http://gis.nemac.org/samab-built?TRANSPARENT=true" visible="false" />
 			</wmsSubgroup>
 		</wmsGroup>
 		<wmsGroup gid="G05" label="Economic" name="economic">
